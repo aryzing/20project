@@ -1,0 +1,190 @@
+@font-face {
+	font-family: "Stag Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/StagSans-Book-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans";
+	font-style: italic;
+	font-weight: 400;
+	src: url("fonts/StagSans-BookItalic-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans";
+	font-style: normal;
+	font-weight: 300;
+	src: url("fonts/StagSans-Light-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans";
+	font-style: italic;
+	font-weight: 300;
+	src: url("fonts/StagSans-LightItalic-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: url("fonts/StagSans-Medium-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans";
+	font-style: italic;
+	font-weight: 600;
+	src: url("fonts/StagSans-MediumItalic-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans Round";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/StagSansRound-Book-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans Round";
+	font-style: normal;
+	font-weight: 300;
+	src: url("fonts/StagSansRound-Light-Web.woff") format("woff");
+}
+@font-face {
+	font-family: "Stag Sans Round";
+	font-style: normal;
+	font-weight: 600;
+	src: url("fonts/StagSansRound-Medium-Web.woff") format("woff");
+}
+
+html, html * {
+	font-family: "Stag Sans", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right,#0075B0 50%,#78be20 100%);
+}
+
+form > label, form > input {
+  display: block;
+}
+form > input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+label {
+	font-weight: bold;
+  line-height: 1.68rem;
+	font-size: 1.2rem;
+}
+
+input {
+	border: 1px solid #333;
+	font-size: 1rem;
+	height: 2rem;
+	padding: 0.2rem;
+}
+
+a {
+  color: #159cdf;
+  text-decoration: none;
+}
+a:hover {
+  color: #005d8c;
+}
+
+.container {
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+	padding: 1rem;
+}
+
+.h-center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.v-center {
+  justify-content: center;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+}
+
+.button {
+	font-size: 1rem;
+	line-height: 1rem;
+  cursor: pointer;
+	padding: .8rem 1.4rem;
+	text-align: center;
+	text-transform: uppercase;
+	transition: background-color 300ms ease-out;
+}
+.primary {
+	color: #fff;
+	background-color: #78be20;
+}
+.primary:hover, .primary:active, .primary:focus {
+	color: #ffffff;
+	background-color: #91da35;
+}
+.secondary {
+	color: #333333;
+  background-color: #8eabba;
+}
+.tertiary {
+	color: #666666;
+	background-color: #ffffff;
+	border: 1px solid #848484;
+}
+.full {
+  width: 100%;
+}
+.button-sign-in {
+	margin-bottom: 1rem;
+}
+.button-create-account {
+	display: inline-block;
+}
+
+@media (min-width: 500px) {
+  html {
+    font-size: 19px;
+  }
+  .form-container {
+    max-width: 500px;
+  }
+}
+@media (min-width: 650px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 960px) {
+  html {
+    font-size: 21px;
+  }
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 22px;
+  }
+}
